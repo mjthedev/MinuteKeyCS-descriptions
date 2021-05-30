@@ -2,36 +2,34 @@ import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import {Container, Row, Col, Dropdown} from 'react-bootstrap';
+import AutoKey from "../descriptions/autoKey.js"
+import AutoLockout from "../descriptions/autoLockout.js"
 
 
-import AutoKey from "./displayBox";
+
 
 
 
 
 function EntirePage() {
 
+    // let words = document.getElementById('')
+
        return (
+           <>
         <Container>
                 <Container>
             <Row>
             <Col>
             
             <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic"> Auto</Dropdown.Toggle>
-
-
-            <Dropdown.Menu>
-                 
-                        <Dropdown.Item as="button" onClick={() => AutoKey}>Auto Key</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Auto Lockout</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Auto Ignition</Dropdown.Item>
-                        <Dropdown.Item href="#/action-1">Auto Lockout & Key</Dropdown.Item>
-
-
-
-                
-            </Dropdown.Menu>
+                <Dropdown.Toggle variant="warning" id="dropdown-basic"> Auto</Dropdown.Toggle>
+                <Dropdown.Menu variant="dark">
+                            <Dropdown.Item as="button" onClick={()=> AutoKey}> AutoKey </Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Auto Lockout</Dropdown.Item>
+                            <Dropdown.Item href="#/action-1">Auto Lockout & Key</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Auto Ignition</Dropdown.Item>
+                </Dropdown.Menu>
         </Dropdown>
 
         </Col>
@@ -40,7 +38,7 @@ function EntirePage() {
             
             <Col> 
                     <Dropdown>
-                                <Dropdown.Toggle variant="success" id="dropdown-home"> Home</Dropdown.Toggle>
+                                <Dropdown.Toggle variant="warning" id="dropdown-home"> Home</Dropdown.Toggle>
                         <Dropdown.Menu>
                                         <Dropdown.Item>Home/Apartment Lockout</Dropdown.Item>
                                         <Dropdown.Item href="#/action-3">Home/Apartment Rekey</Dropdown.Item>
@@ -51,7 +49,7 @@ function EntirePage() {
             </Col>
             <Col> 
             <Dropdown>
-                        <Dropdown.Toggle variant="success" id="dropdown-business/office"> Business/Office</Dropdown.Toggle>
+                        <Dropdown.Toggle variant="warning" id="dropdown-business/office"> Business/Office</Dropdown.Toggle>
                 <Dropdown.Menu>
                                 <Dropdown.Item href="#/action-2">Business/Office Lockout</Dropdown.Item>
                                 <Dropdown.Item href="#/action-3">Business/Office Rekey</Dropdown.Item>
@@ -63,7 +61,7 @@ function EntirePage() {
             <Col> 
             <Dropdown>
 
-            <Dropdown.Toggle variant="success" id="dropdown-basic"> Others</Dropdown.Toggle>
+            <Dropdown.Toggle variant="warning" id="dropdown-basic"> Others</Dropdown.Toggle>
                 <Dropdown.Menu>
 
                             <Dropdown.Item href="#/action-1">Safe Unlock</Dropdown.Item>
@@ -78,6 +76,7 @@ function EntirePage() {
             </Row>
         </Container>
       </Container>
+    </>
            
         )
     
@@ -93,4 +92,4 @@ export default EntirePage
 //         <div className="col">dropdown</div>
 //         <div className="col">description</div>
 // </div>
-// </div>
+// </div> 
