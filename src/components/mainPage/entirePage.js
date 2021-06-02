@@ -1,9 +1,10 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import {Container, Row, Col, Dropdown} from 'react-bootstrap';
-import AutoKey from "../descriptions/autoKey.js"
-import AutoLockout from "../descriptions/autoLockout.js"
+import './descriptions.css'
+
 
 
 
@@ -17,18 +18,31 @@ function EntirePage() {
 
        return (
            <>
-        <Container>
-                <Container>
-            <Row>
-            <Col>
+    <Container>
+        <Container style={{ paddingTop:180, zIndex:5}}>
+            <Row className="justify-content-md-center">
+            <Col md={1}>
             
             <Dropdown>
                 <Dropdown.Toggle variant="warning" id="dropdown-basic"> Auto</Dropdown.Toggle>
                 <Dropdown.Menu variant="dark">
-                            <Dropdown.Item as="button" onClick={()=> AutoKey}> AutoKey </Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Auto Lockout</Dropdown.Item>
-                            <Dropdown.Item href="#/action-1">Auto Lockout & Key</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Auto Ignition</Dropdown.Item>
+                    <Link to="/autokey">
+                        <Dropdown.Item as="button" >AutoKey </Dropdown.Item>
+                    </Link>
+
+                    <Link to="/autolockout">
+                        <Dropdown.Item as="button" >Auto Lockout</Dropdown.Item>
+                    </Link>
+
+                    <Link to="/autolockoutkey">
+                        <Dropdown.Item as="button">Auto Lockout & Key</Dropdown.Item>
+                    </Link>
+
+                    <Link to="/autoignition">
+                        <Dropdown.Item as="button">Auto Ignition</Dropdown.Item>
+                    </Link>
+                          
+                            
                 </Dropdown.Menu>
         </Dropdown>
 
@@ -36,40 +50,79 @@ function EntirePage() {
 
             
             
-            <Col> 
-                    <Dropdown>
-                                <Dropdown.Toggle variant="warning" id="dropdown-home"> Home</Dropdown.Toggle>
-                        <Dropdown.Menu>
-                                        <Dropdown.Item>Home/Apartment Lockout</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-3">Home/Apartment Rekey</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-1">Home/Apartment Lock Installation</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-2">Home/Apartment Lock Change</Dropdown.Item>
-                        </Dropdown.Menu>
-                    </Dropdown>
-            </Col>
-            <Col> 
+        <Col md={1}> 
             <Dropdown>
-                        <Dropdown.Toggle variant="warning" id="dropdown-business/office"> Business/Office</Dropdown.Toggle>
+                        <Dropdown.Toggle variant="warning" id="dropdown-home"> Home</Dropdown.Toggle>
                 <Dropdown.Menu>
-                                <Dropdown.Item href="#/action-2">Business/Office Lockout</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">Business/Office Rekey</Dropdown.Item>
-                                <Dropdown.Item href="#/action-1">Business/Office Lock Installation</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">Business/Office Lock Change</Dropdown.Item>
+
+            <Link to="/homelockout">
+                <Dropdown.Item as="button">Home/Apartment Lockout</Dropdown.Item>
+            </Link>
+
+            <Link to="/homelockchange">
+                <Dropdown.Item as="button">Home/Apartment Lock Change</Dropdown.Item>
+            </Link>
+
+            <Link to="/homerekey">
+                <Dropdown.Item as="button">Home/Apartment Rekey</Dropdown.Item>
+            </Link>
+
+            <Link to="/homelockinstall">
+                <Dropdown.Item as="button">Home/Apartment Lock Installation</Dropdown.Item>
+            </Link>
+                                
+                                
+                                
+                                
                 </Dropdown.Menu>
             </Dropdown>
             </Col>
-            <Col> 
+        <Col md={1}> 
             <Dropdown>
-
-            <Dropdown.Toggle variant="warning" id="dropdown-basic"> Others</Dropdown.Toggle>
+                        <Dropdown.Toggle variant="warning" id="dropdown-business/office"> Business</Dropdown.Toggle>
                 <Dropdown.Menu>
 
-                            <Dropdown.Item href="#/action-1">Safe Unlock</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Storage Facility Lock Pop</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                            <Dropdown.Item href="#/action-1">Something else</Dropdown.Item>
-                            <Dropdown.Item href="#/action-1">Something else</Dropdown.Item>
+                    <Link to="businesslockout">
+                        <Dropdown.Item as="button">Business Lockout</Dropdown.Item>
+                    </Link>
 
+                    <Link  to="businesslockchange">
+                        <Dropdown.Item as="button">Business Lock Change</Dropdown.Item>
+                    </Link>
+                               
+                    <Link to="businesslockinstall">
+                        <Dropdown.Item as="button">Business Lock Installation</Dropdown.Item>
+                    </Link>
+
+                    <Link  to="businessrekey">
+                        <Dropdown.Item a="button">Business Rekey</Dropdown.Item>
+                    </Link>
+
+                                
+                                
+                                
+                </Dropdown.Menu>
+            </Dropdown>
+            </Col>
+
+            <Col className="ml-4" md={1}> 
+            <Dropdown>
+
+            <Dropdown.Toggle variant="warning" id="dropdown-other"> Others</Dropdown.Toggle>
+                <Dropdown.Menu>
+
+                        <Link to="/basicsafelockout">
+                            <Dropdown.Item as="button">Safe Unlock</Dropdown.Item>
+                        </Link>
+
+                        <Link to="/highendsafelockout">
+                            <Dropdown.Item as="button">High End Safe Unlock</Dropdown.Item>
+                        </Link>
+
+                        <Link to="storagefacilitylockpop">
+                            <Dropdown.Item as="button">Storage Facility Lock Pop</Dropdown.Item>
+                        </Link>
+                        
                 </Dropdown.Menu>
             </Dropdown>
             </Col>
