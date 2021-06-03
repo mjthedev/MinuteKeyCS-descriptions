@@ -34,9 +34,6 @@ function AutoLockout() {
           <Year/>
           <Make/>
           <Model/>
-
-          <FaRegCopy  size={30} onClick={() => copyText()}/>
-          
         </Card.Body>
       </Card>
     )

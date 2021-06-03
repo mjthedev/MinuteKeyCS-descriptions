@@ -30,12 +30,9 @@ function AutoLockoutKey() {
            Customer is locked out of vehicle and would like to have a key made for the same vahicle.<br/>
            VEHICLE: 
           </Card.Text>
-
           <Year/>
           <Make/>
           <Model/>
-          <FaRegCopy  size={30} onClick={() =>  copyText()}/>
-          
         </Card.Body>
       </Card>
     )
