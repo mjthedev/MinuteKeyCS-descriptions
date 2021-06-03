@@ -9,14 +9,28 @@ import {RunYear} from '../functions/runYear'
 
 const Year = ()=> {
 
-
-
+    const [year, setYear] = React.useState('')
+    
     return (
 
         
         <DropdownButton variant='success' id="dropdowntitle" title="Year"
         >
-                      <Dropdown.Item id="year2021" onClick={() => {RunYear('year2021')}} >2021</Dropdown.Item>
+                      <Dropdown.Item id="year2021" onClick={() => 
+               {
+                        
+                let title = document.getElementById('dropdowntitle')
+                let carYear = document.getElementById(`year2021`)
+                title.innerHTML = carYear.innerHTML
+                let yearText = title.innerHTML
+                console.log(yearText)
+                setYear(yearText)
+                console.log(year)
+                console.log(navigator)
+
+               }
+                    
+                    } >2021</Dropdown.Item>
                       <Dropdown.Item id="year2020" onClick={() => {RunYear('year2020')}}>2020</Dropdown.Item>
                       <Dropdown.Item id="year2019" onClick={() => {RunYear('year2019')}}>2019</Dropdown.Item>
                       <Dropdown.Item id="year2018" onClick={() => {RunYear('year2018')}}>2018</Dropdown.Item>

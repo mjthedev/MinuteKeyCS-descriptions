@@ -82,25 +82,22 @@ function EntirePage() {
                         <Dropdown.Toggle variant="warning" id="dropdown-business/office"> Business</Dropdown.Toggle>
                 <Dropdown.Menu>
 
-                    <Link to="businesslockout">
+                    <Link to="/businesslockout">
                         <Dropdown.Item as="button">Business Lockout</Dropdown.Item>
                     </Link>
 
-                    <Link  to="businesslockchange">
+                    <Link  to="/businesslockchange">
                         <Dropdown.Item as="button">Business Lock Change</Dropdown.Item>
                     </Link>
                                
-                    <Link to="businesslockinstall">
+                    <Link to="/businesslockinstall">
                         <Dropdown.Item as="button">Business Lock Installation</Dropdown.Item>
                     </Link>
 
-                    <Link  to="businessrekey">
-                        <Dropdown.Item a="button">Business Rekey</Dropdown.Item>
+                    <Link to="/businessrekey">
+                        <Dropdown.Item as="button">Business Rekey</Dropdown.Item>
                     </Link>
 
-                                
-                                
-                                
                 </Dropdown.Menu>
             </Dropdown>
             </Col>
