@@ -16,11 +16,11 @@ import copyText from '../../functions/copytext';
 
 
 function AutoKey() {
-
-  let [year, setYear] = React.useState('');
-  let [make, setMake] = React.useState('');
-  let [model, setModel] = React.useState('');
-
+  
+    let [year, setYear] = React.useState('');
+    let [make, setMake] = React.useState('');
+    let [model, setModel] = React.useState('');
+  
     return (  
         <Card className="mx-auto " bg={'secondary'} text='white' style={{width: '28rem', marginTop: 20}}>
           <Card.Header  as="h1"> Auto <FaRegCopy size={30} onClick={() =>  copyText()}/></Card.Header>

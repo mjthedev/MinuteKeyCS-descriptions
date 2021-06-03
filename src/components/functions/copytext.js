@@ -7,9 +7,6 @@ import React from 'react';
 
 
 
-
-
-
 async function copyText() {
 
     const boxText =  document.getElementById('description').innerText

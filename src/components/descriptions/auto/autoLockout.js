@@ -12,7 +12,6 @@ import copyText from './autoKey';
 
 
 
-
 function AutoLockout() {
 
   let [year, setYear] = React.useState('')
@@ -28,7 +27,7 @@ function AutoLockout() {
            <br/>
            AUTO LOCKOUT <br/>
            Customer is locked out of vehicle and would like immediate assistance.<br/>
-           VEHICLE: 
+           VEHICLE: {year} {make} {model}
           </Card.Text>
           
           <Year/>

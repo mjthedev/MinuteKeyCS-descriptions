@@ -1,9 +1,11 @@
+
 import React from 'react';
 import {Link} from 'react-router-dom'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import {Container, Row, Col, Dropdown} from 'react-bootstrap';
 import './descriptions.css'
+import logo from './mkLogo.png'
 
 
 
@@ -18,8 +20,13 @@ function EntirePage() {
 
        return (
            <>
-    <Container>
-        <Container style={{ paddingTop:180, zIndex:5}}>
+     
+    <Container fluid>
+
+  <Container fluid style={{backgroundColor:"white", height: 100}}>
+      <img src={logo} className="mt-2"></img>
+  </Container>
+        <Container style={{ paddingTop:80, zIndex:5}}>
             <Row className="justify-content-md-center">
             <Col md={1}>
             
