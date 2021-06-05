@@ -16,6 +16,7 @@ function BusinessLockout() {
                   <Card.Text id='description'>
                   <br/>
                   <strong>BUSINESS LOCKOUT</strong><br/>
+                  <br/>
                   Customer needs immediate assistance unlocking doors to a business establishmennt.
                   </Card.Text>
         </Card.Body>

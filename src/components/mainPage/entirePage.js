@@ -63,19 +63,23 @@ function EntirePage() {
                 <Dropdown.Menu>
 
             <Link to="/homelockout">
-                <Dropdown.Item as="button">Home/Apartment Lockout</Dropdown.Item>
+                <Dropdown.Item as="button" className="dditems">Home/Apartment Lockout</Dropdown.Item>
             </Link>
 
             <Link to="/homelockchange">
-                <Dropdown.Item as="button">Home/Apartment Lock Change</Dropdown.Item>
+                <Dropdown.Item as="button" className="dditems">Home/Apartment Lock Change</Dropdown.Item>
             </Link>
 
             <Link to="/homerekey">
-                <Dropdown.Item as="button">Home/Apartment Rekey</Dropdown.Item>
+                <Dropdown.Item as="button" className="dditems">Home/Apartment Rekey</Dropdown.Item>
+            </Link>
+
+            <Link to="/homelockrepair">
+                <Dropdown.Item as="button" className="dditems">Home/Apartment Lock Repair</Dropdown.Item>
             </Link>
 
             <Link to="/homelockinstall">
-                <Dropdown.Item as="button">Home/Apartment Lock Installation</Dropdown.Item>
+                <Dropdown.Item as="button" className="dditems">Home/Apartment Lock Installation</Dropdown.Item>
             </Link>
                                 
                                 
@@ -90,19 +94,19 @@ function EntirePage() {
                 <Dropdown.Menu>
 
                     <Link to="/businesslockout">
-                        <Dropdown.Item as="button">Business Lockout</Dropdown.Item>
+                        <Dropdown.Item as="button" className="dditems">Business Lockout</Dropdown.Item>
                     </Link>
 
                     <Link  to="/businesslockchange">
-                        <Dropdown.Item as="button">Business Lock Change</Dropdown.Item>
+                        <Dropdown.Item as="button" className="dditems">Business Lock Change</Dropdown.Item>
                     </Link>
                                
                     <Link to="/businesslockinstall">
-                        <Dropdown.Item as="button">Business Lock Installation</Dropdown.Item>
+                        <Dropdown.Item as="button" className="dditems">Business Lock Installation</Dropdown.Item>
                     </Link>
 
                     <Link to="/businessrekey">
-                        <Dropdown.Item as="button">Business Rekey</Dropdown.Item>
+                        <Dropdown.Item as="button" className="dditems">Business Rekey</Dropdown.Item>
                     </Link>
 
                 </Dropdown.Menu>
@@ -116,15 +120,15 @@ function EntirePage() {
                 <Dropdown.Menu>
 
                         <Link to="/basicsafelockout">
-                            <Dropdown.Item as="button">Safe Unlock</Dropdown.Item>
+                            <Dropdown.Item as="button" className="dditems">Safe Unlock</Dropdown.Item>
                         </Link>
 
                         <Link to="/highendsafelockout">
-                            <Dropdown.Item as="button">High End Safe Unlock</Dropdown.Item>
+                            <Dropdown.Item as="button" className="dditems">High End Safe Unlock</Dropdown.Item>
                         </Link>
 
                         <Link to="storagefacilitylockpop">
-                            <Dropdown.Item as="button">Storage Facility Lock Pop</Dropdown.Item>
+                            <Dropdown.Item as="button" className="dditems">Storage Facility Lock Pop</Dropdown.Item>
                         </Link>
                         
                 </Dropdown.Menu>

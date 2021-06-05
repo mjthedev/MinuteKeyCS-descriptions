@@ -1,11 +1,11 @@
-import React from 'react';
-import { createStore } from 'redux';
-import {theReducer as we} from '../descriptions/auto/autoKey';
-import {year} from '../descriptions/auto/autoKey';
+// import React from 'react';
+// import { createStore } from 'redux';
+// import {theReducer as we} from '../descriptions/auto/autoKey';
+// import {year} from '../descriptions/auto/autoKey';
 
 
-import { useSelector, useDispatch } from 'react-redux'
-import { changeText } from '../../app/features/year/year'
+// import { useSelector, useDispatch } from 'react-redux'
+// import { changeText } from '../../app/features/year/year'
 
 
 
@@ -17,25 +17,25 @@ import { changeText } from '../../app/features/year/year'
 
 
 
-export function theReducer(state = { year: 'Orignial State' }, action) {
+// export function theReducer(state = { year: 'Orignial State' }, action) {
   
-  let title = 'this is title'
-  let test2 = 'the text in the DOM2';
-  let test3 = 'the text in the DOM3';
-  let test4 = 'the text in the DOM4';
-   switch (action.type) {
-     case 'updatetest1':
-       return { year: state.year = title}
-       case 'updatetest2':
-       return { year: state.year = test2 }
-       case 'updatetest3':
-       return { year: state.year = test3 }
-       case 'updatetest4':
-       return { year: state.year = test4 }
-     default:
-       return state
-   }
-  }
+//   // let title = 'this is title'
+//   // let test2 = 'the text in the DOM2';
+//   // let test3 = 'the text in the DOM3';
+//   // let test4 = 'the text in the DOM4';
+//    switch (action.type) {
+//      case 'updatetest1':
+//        return { year: state.year = title}
+//        case 'updatetest2':
+//        return { year: state.year = test2 }
+//        case 'updatetest3':
+//        return { year: state.year = test3 }
+//        case 'updatetest4':
+//        return { year: state.year = test4 }
+//      default:
+//        return state
+//    }
+//   }
   
 
   // let samestore = createStore(theReducer)

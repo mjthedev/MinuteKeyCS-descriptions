@@ -10,6 +10,7 @@ import HomeLockout from './components/descriptions/home/homeLockout';
 import HomeLockChange from './components/descriptions/home/homeLockChange';
 import HomeLockInstall from './components/descriptions/home/homeLockInstall';
 import HomeRekey from './components/descriptions/home/homeRekey';
+import HomeLockRepair from './components/descriptions/home/homeLockRepair';
 import BusinessLockout from './components/descriptions/business/businessLockout';
 import BusinessLockChange from './components/descriptions/business/businessLockChange';
 import BusinessLockInstall from './components/descriptions/business/businessLockInstall';
@@ -39,6 +40,7 @@ function App() {
             <Route path="/homelockout" component={HomeLockout}/>
             <Route path="/homelockchange" component={HomeLockChange}/>
             <Route path="/homelockinstall" component={HomeLockInstall}/>
+            <Route path="/homelockrepair" component={HomeLockRepair}/>
             <Route path="/homerekey" component={HomeRekey}/>
             <Route path="/businesslockout" component={BusinessLockout}/>
             <Route path="/businesslockchange" component={BusinessLockChange}/>

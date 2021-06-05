@@ -1,7 +1,9 @@
 import React from 'react';
 import {FaRegCopy} from 'react-icons/fa';
 import "bootstrap/dist/js/bootstrap.bundle.js";
-import {Card, Button} from "react-bootstrap";
+import {Card, 
+  // Button
+} from "react-bootstrap";
 import Year from '../../buttons/year';
 import Make from '../../buttons/make';
 import Model from '../../buttons/model';
@@ -29,8 +31,9 @@ function AutoIgnition() {
           <Card.Text id='description'>
            <br/>
            <strong>AUTO IGNITION</strong> <br/>
-           Customer has key locked/broken in the ignition and/or would simply like to have ignition replaced.<br/>In need of immediate assistance.<br/>
-           VEHICLE: {theYear} {theMake} {theModel}
+           <br/>
+           Customer has key locked/broken in the ignition and/or would simply like to have ignition replaced and in need of immediate assistance.<br/>
+           <span className="h5">VEHICLE: {theYear} {theMake} {theModel}</span>
           </Card.Text>
 
           <Year/>

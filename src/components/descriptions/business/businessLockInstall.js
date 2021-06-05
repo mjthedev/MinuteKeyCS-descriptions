@@ -16,6 +16,7 @@ function BusinessLockInstall() {
                   <Card.Text id='description'>
                   <br/>
                   <strong>BUSINESS LOCK INSTALLATION</strong><br/>
+                  <br/>
                   Customer needs immediate assistance getting one or more locks installed at a business estabishment.
                   </Card.Text>
         </Card.Body>

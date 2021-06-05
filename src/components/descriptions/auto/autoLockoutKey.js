@@ -1,7 +1,7 @@
 import React from 'react';
 import {FaRegCopy} from 'react-icons/fa';
 import "bootstrap/dist/js/bootstrap.bundle.js";
-import {Card, Button} from "react-bootstrap";
+import {Card} from "react-bootstrap";
 import Year from '../../buttons/year';
 import Make from '../../buttons/make';
 import Model from '../../buttons/model';
@@ -16,9 +16,9 @@ import { useSelector} from 'react-redux'
 
 function AutoLockoutKey() {
 
-  const lockoutYear = useSelector(state => state.year.value)
-  const lockoutMake = useSelector(state => state.make.value)
-  const lockoutModel = useSelector(state => state.model.value)
+  const theYear = useSelector(state => state.year.value)
+  const theMake = useSelector(state => state.make.value)
+  const theModel = useSelector(state => state.model.value)
   
     
 
@@ -29,9 +29,10 @@ function AutoLockoutKey() {
           <Card.Title as="h3" >Description</Card.Title>
           <Card.Text id='description'>
           <br/>
-          <strong>QUOTE FOR AUTO KEY & LOCKOUT</strong> <br/>
-           Customer is locked out of vehicle and would like to have a key made for the same vahicle.<br/>
-           VEHICLE: {lockoutYear} {lockoutMake} {lockoutModel}
+          <strong>QUOTE FOR AUTO KEY & LOCKOUT</strong><br/>
+          <br/>
+           Customer is locked out of vehicle and would like to have a key made for the same vehicle.<br/>
+           <span className="h5">VEHICLE: {theYear} {theMake} {theModel}</span>
           </Card.Text>
           <Year/>
           <Make/>

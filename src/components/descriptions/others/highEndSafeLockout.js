@@ -19,6 +19,7 @@ function HighEndSafeLockout() {
                   <Card.Text id='description'>
                   <br/>
                   <strong>HIGH END SAFE UNLOCK</strong><br/>
+                  <br/>
                   Customer needs immediate assistance getting a high end safe unlocked.
                   </Card.Text>
         </Card.Body>

@@ -16,6 +16,7 @@ function HomeLockChange() {
                   <Card.Text id='description'>
                     <br/>
                  <strong> HOME/APARTMENT LOCK CHANGE</strong> <br/>
+                 <br/>
                   Customer would like to have one or more locks changed at home/apartment and needs immediate assistance!
                   </Card.Text>
         </Card.Body>

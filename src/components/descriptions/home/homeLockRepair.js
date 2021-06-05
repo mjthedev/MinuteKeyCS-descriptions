@@ -6,23 +6,27 @@ import './descriptions.css';
 import copyText from '../../functions/copytext';
 
 
-function BusinessRekey() {
+function HomeLockRepair() {
 
     return (  
         <Card className="mx-auto " bg={'secondary'} text='white' style={{width: '28rem', marginTop: 20}}>
-          <Card.Header  as="h1"> Storage Facility <FaRegCopy size={30} onClick={() =>  copyText()}/></Card.Header>
+          <Card.Header  as="h1"> Home <FaRegCopy size={30} onClick={() =>  copyText()}/></Card.Header>
             <Card.Body>
               <Card.Title as="h3" >Description</Card.Title>
                   <Card.Text id='description'>
                   <br/>
-                  <strong>STORAGE FACILITY LOCK POP</strong><br/>
-                  <br/>
-                    Customer needs immediate assistance getting a lock popped, cut, drilled at a storage facility.
+                    <strong>HOME/APARTMENT LOCK REPAIR</strong><br/>
+                    <br/>
+                    Customer would like to have home/apartment lock repaired and needs immediate assistance!
                   </Card.Text>
         </Card.Body>
       </Card>
     )
+    
+    
 };
 
-export default BusinessRekey;
+
+
+export default HomeLockRepair;
     
