@@ -15,7 +15,7 @@ function BusinessRekey() {
               <Card.Title as="h3" >Description</Card.Title>
                   <Card.Text id='description'>
                   <br/>
-                  BUSINESS RE-KEY<br/>
+                  <strong>BUSINESS RE-KEY</strong><br/>
                     Customer needs immediate assistance getting business re-keyed.
                   </Card.Text>
         </Card.Body>

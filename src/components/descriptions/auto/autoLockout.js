@@ -5,7 +5,9 @@ import {Card, Button} from "react-bootstrap";
 import Year from '../../buttons/year';
 import Make from '../../buttons/make';
 import Model from '../../buttons/model';
-import copyText from './autoKey';
+import copyText from '../../functions/copytext';
+import { useSelector, useDispatch } from 'react-redux'
+import { changeText } from '../../../app/features/year/year'
 
 
 
@@ -14,9 +16,13 @@ import copyText from './autoKey';
 
 function AutoLockout() {
 
-  let [year, setYear] = React.useState('')
-  let [make, setMake] = React.useState('')
-  let [model, setModel] = React.useState('')
+  const theYear = useSelector(state => state.year.value)
+  const theMake = useSelector(state => state.make.value)
+  const theModel = useSelector(state => state.model.value)
+    
+
+
+  
 
     return (
       <Card className="mx-auto " bg={'secondary'} text='white' style={{width: '28rem', marginTop: 20}}>
@@ -25,9 +31,9 @@ function AutoLockout() {
           <Card.Title as="h3" >Description</Card.Title>
           <Card.Text id='description'>
            <br/>
-           AUTO LOCKOUT <br/>
+           <strong>AUTO LOCKOUT</strong> <br/>
            Customer is locked out of vehicle and would like immediate assistance.<br/>
-           VEHICLE: {year} {make} {model}
+           VEHICLE: {theYear} {theMake} {theModel}
           </Card.Text>
           
           <Year/>

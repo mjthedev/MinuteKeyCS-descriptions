@@ -15,7 +15,7 @@ function BasicSafeLockout() {
               <Card.Title as="h3" >Description</Card.Title>
                   <Card.Text id='description'>
                   <br/>
-                  BASIC SAFE UNLOCK<br/>
+                  <strong>BASIC SAFE UNLOCK</strong><br/>
                   Customer needs immediate assistance getting a basic safe unlocked.
                   </Card.Text>
         </Card.Body>

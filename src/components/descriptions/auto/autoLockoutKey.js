@@ -6,6 +6,7 @@ import Year from '../../buttons/year';
 import Make from '../../buttons/make';
 import Model from '../../buttons/model';
 import copyText from '../../functions/copytext';
+import { useSelector} from 'react-redux'
 
 
 
@@ -15,9 +16,11 @@ import copyText from '../../functions/copytext';
 
 function AutoLockoutKey() {
 
-  let [year, setYear] = React.useState('')
-  let [make, setMake] = React.useState('')
-  let [model, setModel] = React.useState('')
+  const lockoutYear = useSelector(state => state.year.value)
+  const lockoutMake = useSelector(state => state.make.value)
+  const lockoutModel = useSelector(state => state.model.value)
+  
+    
 
     return (
       <Card className="mx-auto " bg={'secondary'} text='white' style={{width: '28rem', marginTop: 20}}>
@@ -26,9 +29,9 @@ function AutoLockoutKey() {
           <Card.Title as="h3" >Description</Card.Title>
           <Card.Text id='description'>
           <br/>
-          <stong>QUOTE FOR AUTO KEY & LOCKOUT</stong> <br/>
+          <strong>QUOTE FOR AUTO KEY & LOCKOUT</strong> <br/>
            Customer is locked out of vehicle and would like to have a key made for the same vahicle.<br/>
-           VEHICLE: 
+           VEHICLE: {lockoutYear} {lockoutMake} {lockoutModel}
           </Card.Text>
           <Year/>
           <Make/>

@@ -15,7 +15,7 @@ function HomeLockout() {
               <Card.Title as="h3" >Description</Card.Title>
                   <Card.Text id='description'>
                     <br/>
-                  HOME/APARTMENT LOCKOUT<br/>
+                 <strong>HOME/APARTMENT LOCKOUT</strong><br/>
                   Customer is locked out of home/apartment and needs immediate assistance!
                   </Card.Text>
         </Card.Body>

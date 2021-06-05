@@ -6,6 +6,7 @@ import Year from '../../buttons/year';
 import Make from '../../buttons/make';
 import Model from '../../buttons/model';
 import copyText from '../../functions/copytext';
+import { useSelector} from 'react-redux'
 
 
 
@@ -14,9 +15,11 @@ import copyText from '../../functions/copytext';
 
 function AutoIgnition() {
 
-  let [year, setYear] = React.useState('')
-  let [make, setMake] = React.useState('')
-  let [model, setModel] = React.useState('')
+  const theYear = useSelector(state => state.year.value)
+  const theMake = useSelector(state => state.make.value)
+  const theModel = useSelector(state => state.model.value)
+  
+    
 
     return (
       <Card className="mx-auto " bg={'secondary'} text='white' style={{width: '28rem', marginTop: 20}}>
@@ -25,9 +28,9 @@ function AutoIgnition() {
           <Card.Title as="h3" >Description</Card.Title>
           <Card.Text id='description'>
            <br/>
-           AUTO IGNITION <br/>
+           <strong>AUTO IGNITION</strong> <br/>
            Customer has key locked/broken in the ignition and/or would simply like to have ignition replaced.<br/>In need of immediate assistance.<br/>
-           VEHICLE: 
+           VEHICLE: {theYear} {theMake} {theModel}
           </Card.Text>
 
           <Year/>

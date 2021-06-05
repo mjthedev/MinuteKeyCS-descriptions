@@ -15,7 +15,7 @@ function BusinessRekey() {
               <Card.Title as="h3" >Description</Card.Title>
                   <Card.Text id='description'>
                   <br/>
-                  STORAGE FACILITY LOCK POP<br/>
+                  <strong>STORAGE FACILITY LOCK POP</strong><br/>
                     Customer needs immediate assistance getting a lock popped, cut, drilled at a storage facility.
                   </Card.Text>
         </Card.Body>

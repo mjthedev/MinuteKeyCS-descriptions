@@ -15,7 +15,7 @@ function HomeRekey() {
               <Card.Title as="h3" >Description</Card.Title>
                   <Card.Text id='description'>
                   <br/>
-                    HOME/APARTMENT RE-KEY<br/>
+                    <strong>HOME/APARTMENT RE-KEY</strong><br/>
                     Customer would like to have home/apartment re-keyed and needs immediate assistance!
                   </Card.Text>
         </Card.Body>

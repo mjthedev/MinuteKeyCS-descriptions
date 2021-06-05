@@ -24,7 +24,7 @@ function EntirePage() {
     <Container fluid>
 
   <Container fluid style={{backgroundColor:"white", height: 100}}>
-      <img src={logo} className="mt-2"></img>
+      <img src={logo} alt="random" className="mt-2"></img>
   </Container>
         <Container style={{ paddingTop:80, zIndex:5}}>
             <Row className="justify-content-md-center">

@@ -17,13 +17,17 @@ import BusinessRekey from './components/descriptions/business/businessRekey';
 import BasicSafeLockout from './components/descriptions/others/basicSafeLockout';
 import HighEndSafeLockout from './components/descriptions/others/highEndSafeLockout';
 import StorageFacilityLockPop from './components/descriptions/others/storageFacilityLockPop';
+import store from './app/store'
+import { Provider } from 'react-redux'
+
 
 
 
 
 function App() {
   return ( 
-    <>
+    
+     <Provider store={store}>
       <Router>
           <EntirePage/>
           <Switch>
@@ -45,7 +49,8 @@ function App() {
             <Route path="/storagefacilitylockpop" component={StorageFacilityLockPop}/>
           </Switch>
       </Router>
-    </>
+      </Provider>
+    
   );
 }
 

@@ -15,7 +15,7 @@ function HomeLockInstall() {
               <Card.Title as="h3" >Description</Card.Title>
                   <Card.Text id='description'>
                   <br/>
-                  HOME/APARTMENT LOCK INSTALLATION<br/>
+                <strong> HOME/APARTMENT LOCK INSTALLATION</strong><br/>
                   Customer would like to have one or more locks installed at home/apartment and needs immediate assistance!
                   </Card.Text>
         </Card.Body>
