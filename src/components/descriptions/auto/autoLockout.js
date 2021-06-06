@@ -42,7 +42,7 @@ function AutoLockout() {
 
     return (
       <Card className="mx-auto " bg={'secondary'} text='white' style={{width: '28rem', marginTop: 20}}>
-        <Card.Header as="h1"> Auto <FaRegCopy size={30} onClick={() =>  copyText()}/><HiOutlineRefresh size={30} style={{float:'right'}} onClick={() => ResetAll()}/></Card.Header>
+        <Card.Header as="h1"> Auto <FaRegCopy size={30} onClick={() =>  copyText()}/><HiOutlineRefresh size={30} style={{size: 30, float:'right'}} onClick={() => ResetAll()}/></Card.Header>
         <Card.Body>
           <Card.Title as="h3" >Description</Card.Title>
           <Card.Text id='description'>
