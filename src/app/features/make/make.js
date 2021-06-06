@@ -8,10 +8,15 @@ export const makeSlice = createSlice({
     value: ""
   },
   reducers: {
+    resetMake: state => {
+      state.value = ""
+
+    },
     changeText: state => { 
-         let text = "Original State Changed"
-         let we = true;
-         let blah = false;
+      
+        //  let text = "Original State Changed"
+        //  let we = true;
+        //  let blah = false;
          let trueText = document.getElementById('dropdownmake')
       // Redux Toolkit allows us to write "mutating" logic in reducers. It
       // doesn't actually mutate the state because it uses the Immer library,
@@ -27,6 +32,6 @@ export const makeSlice = createSlice({
 
 
 // Action creators are generated for each case reducer function
-export const { changeText } = makeSlice.actions
+export const { changeText, resetMake} = makeSlice.actions
 
 export default makeSlice.reducer

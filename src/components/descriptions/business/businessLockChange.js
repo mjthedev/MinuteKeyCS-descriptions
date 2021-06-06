@@ -16,6 +16,7 @@ function BusinessLockChange() {
                   <Card.Text id='description'>
                   <br/>
                   <strong>BUSINESS LOCK CHANGE</strong><br/>
+                  <br/>
                   Customer needs immediate assistance getting one or more locks changed in business establishment.
                   </Card.Text>
         </Card.Body>

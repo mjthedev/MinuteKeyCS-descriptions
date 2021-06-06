@@ -1,12 +1,14 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+// import ReactDom from 'react-dom';
 import {DropdownButton, Dropdown} from "react-bootstrap";
 import {RunYear} from '../functions/runYear';
-import { createStore } from 'redux';
+// import { createStore } from 'redux';
 
 
-import { useSelector, useDispatch } from 'react-redux'
-import { changeText } from '../../app/features/year/year'
+import { 
+    //  useSelector,
+     useDispatch } from 'react-redux'
+import { changeText} from '../../app/features/year/year'
 
 
 
@@ -20,7 +22,7 @@ import { changeText } from '../../app/features/year/year'
 
 
 const Year = ()=> {
-    const theYear = useSelector(state => state.year.value)
+    // const theYear = useSelector(state => state.year.value)
     const dispatch = useDispatch()
     
     let RunMeYear = (x) => {
@@ -28,7 +30,9 @@ const Year = ()=> {
         dispatch(changeText())
     
     }
-    const [year, setYear] = React.useState('')
+
+  
+    // const [year, setYear] = React.useState('')
     
     return (
         
@@ -55,35 +59,35 @@ const Year = ()=> {
                     
                     } >2021</Dropdown.Item>
                       <Dropdown.Item id="year2020" onClick={() => {RunMeYear('year2020')}}>2020</Dropdown.Item>
-                      <Dropdown.Item id="year2019" onClick={() => {RunYear('year2019')}}>2019</Dropdown.Item>
+                      <Dropdown.Item id="year2019" onClick={() => {RunMeYear('year2019')}}>2019</Dropdown.Item>
                       <Dropdown.Item id="year2018" onClick={() => {RunMeYear('year2018')}}>2018</Dropdown.Item>
                       <Dropdown.Item id="year2017" onClick={() => {RunMeYear('year2017')}}>2017</Dropdown.Item>
                       <Dropdown.Item id="year2016" onClick={() => {RunMeYear('year2016')}}>2016</Dropdown.Item>
                       <Dropdown.Item id="year2015" onClick={() => {RunMeYear('year2015')}}>2015</Dropdown.Item>
                       <Dropdown.Item id="year2014" onClick={() => {RunMeYear('year2014')}}>2014</Dropdown.Item>
                       <Dropdown.Item id="year2013" onClick={() => {RunMeYear('year2013')}}>2013</Dropdown.Item>
-                      <Dropdown.Item id="year2012" onClick={() => {RunMeYear('year2012')}}>2013</Dropdown.Item>
-                      <Dropdown.Item id="year2011" onClick={() => {RunMeYear('year2011')}}>2012</Dropdown.Item>
-                      <Dropdown.Item id="year2010" onClick={() => {RunMeYear('year2010')}}>2011</Dropdown.Item>
-                      <Dropdown.Item id="year2009" onClick={() => {RunMeYear('year2009')}}>2010</Dropdown.Item>
-                      <Dropdown.Item id="year2008" onClick={() => {RunMeYear('year2008')}}>2009</Dropdown.Item>
-                      <Dropdown.Item id="year2007" onClick={() => {RunMeYear('year2007')}}>2008</Dropdown.Item>
+                      <Dropdown.Item id="year2012" onClick={() => {RunMeYear('year2012')}}>2012</Dropdown.Item>
+                      <Dropdown.Item id="year2011" onClick={() => {RunMeYear('year2011')}}>2011</Dropdown.Item>
+                      <Dropdown.Item id="year2010" onClick={() => {RunMeYear('year2010')}}>2010</Dropdown.Item>
+                      <Dropdown.Item id="year2009" onClick={() => {RunMeYear('year2009')}}>2009</Dropdown.Item>
+                      <Dropdown.Item id="year2008" onClick={() => {RunMeYear('year2008')}}>2008</Dropdown.Item>
+                      <Dropdown.Item id="year2007" onClick={() => {RunMeYear('year2007')}}>2007</Dropdown.Item>
                       <Dropdown.Item id="year2006" onClick={() => {RunMeYear('year2006')}}>2006</Dropdown.Item>
                       <Dropdown.Item id="year2005" onClick={() => {RunMeYear('year2005')}}>2005</Dropdown.Item>
                       <Dropdown.Item id="year2004" onClick={() => {RunMeYear('year2004')}}>2004</Dropdown.Item>
                       <Dropdown.Item id="year2003" onClick={() => {RunMeYear('year2003')}}>2003</Dropdown.Item>
-                      <Dropdown.Item id="year2004" onClick={() => {RunMeYear('year2002')}}>2002</Dropdown.Item>
-                      <Dropdown.Item id="year2001" onClick={() => {RunMeYear('year2001')}}>2002</Dropdown.Item>
-                      <Dropdown.Item id="year2000" onClick={() => {RunMeYear('year2000')}}>2001</Dropdown.Item>
-                      <Dropdown.Item id="year1999" onClick={() => {RunMeYear('year1999')}}>2000</Dropdown.Item>
-                      <Dropdown.Item id="year1998" onClick={() => {RunMeYear('year1998')}}>1999</Dropdown.Item>
-                      <Dropdown.Item id="year1997" onClick={() => {RunMeYear('year1997')}}>1998</Dropdown.Item>
-                      <Dropdown.Item id="year1996" onClick={() => {RunMeYear('year1996')}}>1997</Dropdown.Item>
-                      <Dropdown.Item id="year1995" onClick={() => {RunMeYear('year1995')}}>1996</Dropdown.Item>
-                      <Dropdown.Item id="year1994" onClick={() => {RunMeYear('year1994')}}>1995</Dropdown.Item>
-                      <Dropdown.Item id="year1993" onClick={() => {RunMeYear('year1993')}}>1994</Dropdown.Item>
-                      <Dropdown.Item id="year1992" onClick={() => {RunMeYear('year1992')}}>1993</Dropdown.Item>
-                      <Dropdown.Item id="year1991" onClick={() => {RunMeYear('year1991')}}>1992</Dropdown.Item>
+                      <Dropdown.Item id="year2002" onClick={() => {RunMeYear('year2002')}}>2002</Dropdown.Item>
+                      <Dropdown.Item id="year2001" onClick={() => {RunMeYear('year2001')}}>2001</Dropdown.Item>
+                      <Dropdown.Item id="year2000" onClick={() => {RunMeYear('year2000')}}>2000</Dropdown.Item>
+                      <Dropdown.Item id="year1999" onClick={() => {RunMeYear('year1999')}}>1999</Dropdown.Item>
+                      <Dropdown.Item id="year1998" onClick={() => {RunMeYear('year1998')}}>1998</Dropdown.Item>
+                      <Dropdown.Item id="year1997" onClick={() => {RunMeYear('year1997')}}>1997</Dropdown.Item>
+                      <Dropdown.Item id="year1996" onClick={() => {RunMeYear('year1996')}}>1996</Dropdown.Item>
+                      <Dropdown.Item id="year1995" onClick={() => {RunMeYear('year1995')}}>1995</Dropdown.Item>
+                      <Dropdown.Item id="year1994" onClick={() => {RunMeYear('year1994')}}>1994</Dropdown.Item>
+                      <Dropdown.Item id="year1993" onClick={() => {RunMeYear('year1993')}}>1993</Dropdown.Item>
+                      <Dropdown.Item id="year1992" onClick={() => {RunMeYear('year1992')}}>1992</Dropdown.Item>
+                      <Dropdown.Item id="year1991" onClick={() => {RunMeYear('year1991')}}>1991</Dropdown.Item>
                       <Dropdown.Item id="year1990" onClick={() => {RunMeYear('year1990')}}>1990</Dropdown.Item>
                       <Dropdown.Item id="year1989" onClick={() => {RunMeYear('year1989')}}>1989</Dropdown.Item>
                       <Dropdown.Item id="year1988" onClick={() => {RunMeYear('year1988')}}>1988</Dropdown.Item>

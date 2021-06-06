@@ -8,10 +8,15 @@ export const yearSlice = createSlice({
     value: ""
   },
   reducers: {
+
+    resetYear: (state) => {
+      state.value = ""
+
+    },
     changeText: state => { 
-         let text = "Original State Changed"
-         let we = true;
-         let blah = false;
+        //  let text = "Original State Changed"
+        //  let we = true;
+        //  let blah = false;
          let trueText = document.getElementById('dropdownyear')
       // Redux Toolkit allows us to write "mutating" logic in reducers. It
       // doesn't actually mutate the state because it uses the Immer library,
@@ -27,6 +32,6 @@ export const yearSlice = createSlice({
 
 
 // Action creators are generated for each case reducer function
-export const { changeText } = yearSlice.actions
+export const { changeText, resetYear } = yearSlice.actions
 
 export default yearSlice.reducer

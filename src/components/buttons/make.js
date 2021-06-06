@@ -4,7 +4,9 @@ import {DropdownButton} from "react-bootstrap"
 import DropdownItem from 'react-bootstrap/esm/DropdownItem';
 import {RunMake} from '../functions/runMake'
 
-import { useSelector, useDispatch } from 'react-redux'
+import { 
+    //  useSelector,
+     useDispatch } from 'react-redux'
 import { changeText } from '../../app/features/make/make'
 
 
@@ -15,7 +17,7 @@ import { changeText } from '../../app/features/make/make'
 
 
  const Make = () => {
-    const theMake = useSelector(state => state.make.value)
+    // const theMake = useSelector(state => state.make.value)
     const dispatch = useDispatch()
     
 

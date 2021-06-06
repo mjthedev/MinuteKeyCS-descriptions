@@ -1,11 +1,15 @@
 import React from 'react'; 
-import ReactDom from 'react-dom';
-import {Card, Button, DropdownButton, Dropdown} from "react-bootstrap"
+// import ReactDom from 'react-dom';
+import {DropdownButton, Dropdown} from "react-bootstrap"
 import DropdownItem from 'react-bootstrap/esm/DropdownItem';
 import {RunModel} from '../functions/runModel';
 
-
-import { useSelector, useDispatch } from 'react-redux'
+ 
+import { 
+  // eslint-disable-next-line
+        //  useSelector, 
+         useDispatch } 
+         from 'react-redux'
 import { changeText } from '../../app/features/model/model'
 
 
@@ -16,7 +20,7 @@ import { changeText } from '../../app/features/model/model'
 
 export const Model = () => {
 
-  const theModel = useSelector(state => state.model.value)
+  // const theModel = useSelector(state => state.model.value)
   const dispatch = useDispatch()
   
 

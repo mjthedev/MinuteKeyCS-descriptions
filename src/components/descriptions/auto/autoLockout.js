@@ -1,13 +1,17 @@
 import React from 'react';
 import {FaRegCopy} from 'react-icons/fa';
 import "bootstrap/dist/js/bootstrap.bundle.js";
-import {Card, Button} from "react-bootstrap";
+import {Card, 
+  // Button
+} from "react-bootstrap";
 import Year from '../../buttons/year';
 import Make from '../../buttons/make';
 import Model from '../../buttons/model';
 import copyText from '../../functions/copytext';
-import { useSelector, useDispatch } from 'react-redux'
-import { changeText } from '../../../app/features/year/year'
+import { useSelector, 
+  // useDispatch 
+} from 'react-redux'
+// import { changeText } from '../../../app/features/year/year'
 
 
 
@@ -32,8 +36,9 @@ function AutoLockout() {
           <Card.Text id='description'>
            <br/>
            <strong>AUTO LOCKOUT</strong> <br/>
+           <br/>
            Customer is locked out of vehicle and would like immediate assistance.<br/>
-           VEHICLE: {theYear} {theMake} {theModel}
+          <span className="h5">VEHICLE: {theYear} {theMake} {theModel}</span>
           </Card.Text>
           
           <Year/>
