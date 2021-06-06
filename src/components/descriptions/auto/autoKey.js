@@ -80,7 +80,7 @@ const theYear = useSelector((state) => state.year.value)
   const theMake = useSelector((state) => state.make.value)
   const theModel = useSelector((state) => state.model.value)
 
-  let ResetYear = () => {
+  let ResetAll= () => {
       dispatch(resetYear());
       dispatch(resetMake());
       dispatch(resetModel());
@@ -94,7 +94,7 @@ const theYear = useSelector((state) => state.year.value)
     return (  
       
         <Card className="mx-auto " bg={'secondary'} text='white' style={{width: '28rem', marginTop: 20}}>
-          <Card.Header  as="h1"> Auto <FaRegCopy size={30} onClick={() =>  copyText()}/><HiOutlineRefresh onClick={() => {ResetYear()}} style={{float:'right'}}/></Card.Header>
+          <Card.Header  as="h1"> Auto <FaRegCopy size={30} onClick={() =>  copyText()}/><HiOutlineRefresh onClick={() => ResetAll()} style={{float:'right'}}/></Card.Header>
             <Card.Body>
               <Card.Title as="h3" >Description</Card.Title>
                   <Card.Text id='description'>
