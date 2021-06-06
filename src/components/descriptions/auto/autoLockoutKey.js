@@ -41,10 +41,16 @@ function AutoLockoutKey() {
           <Card.Title as="h3" >Description</Card.Title>
           <Card.Text id='description'>
           <br/>
+<<<<<<< HEAD
+          <strong>QUOTE FOR AUTO KEY & LOCKOUT</strong> <br/>
+           Customer is locked out of vehicle and would like to have a key made for the same vehicle.<br/>
+           VEHICLE: {lockoutYear} {lockoutMake} {lockoutModel}
+=======
           <strong>QUOTE FOR AUTO KEY & LOCKOUT</strong><br/>
           <br/>
            Customer is locked out of vehicle and would like to have a key made for the same vehicle.<br/>
            <span className="h5">VEHICLE: {theYear} {theMake} {theModel}</span>
+>>>>>>> eabeb77604ed7d55e6dfe444fb078bc02ed42aaf
           </Card.Text>
           <Year/>
           <Make/>
