@@ -51,8 +51,6 @@ import { changeText } from '../../app/features/make/make'
         <DropdownItem id="toyota" onClick={()=> RunMeMake('toyota')}>TOYOTA</DropdownItem>
         <DropdownItem id="volkswagen" onClick={()=> RunMake('volkswagen')}>VOLKSWAGEN</DropdownItem>
         <DropdownItem id="volvo" onClick={()=> RunMake('volvo')}>VOLVO</DropdownItem>
-        <DropdownItem id="blank" onClick={()=> RunMake('blank')}>BLANK</DropdownItem>
-        <DropdownItem id="blank" onClick={()=> RunMake('blank')}>BLANK</DropdownItem>
     </DropdownButton>
     )
 }

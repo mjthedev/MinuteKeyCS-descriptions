@@ -30,7 +30,7 @@ function AutoLockoutKey() {
           <Card.Text id='description'>
           <br/>
           <strong>QUOTE FOR AUTO KEY & LOCKOUT</strong> <br/>
-           Customer is locked out of vehicle and would like to have a key made for the same vahicle.<br/>
+           Customer is locked out of vehicle and would like to have a key made for the same vehicle.<br/>
            VEHICLE: {lockoutYear} {lockoutMake} {lockoutModel}
           </Card.Text>
           <Year/>
