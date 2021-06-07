@@ -1,6 +1,7 @@
 {
   "name": "cs_description",
   "version": "0.1.0",
+  "descriptions": "minuteKey webApp",
   "private": true,
   "type": "module",
   "dependencies": {

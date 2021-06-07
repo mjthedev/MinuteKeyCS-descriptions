@@ -1,6 +1,9 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import EntirePage from './components/mainPage/entirePage';
+import Login from './components/auth/login';
+import Signup from './components/auth/signup';
+import Complete from './components/auth/complete';
 import Welcome from './components/descriptions/welcome'; 
 import AutoKey from './components/descriptions/auto/autoKey'; 
 import AutoLockout from './components/descriptions/auto/autoLockout'; 
@@ -32,7 +35,10 @@ function App() {
       <Router>
           <EntirePage/>
           <Switch>
-            <Route path="/" exact component={Welcome}/>
+            <Route path="/" exact component={Login}/>
+            <Route path="/signup" exact component={Signup}/>
+            <Route path="/complete" exact component={Complete}/>
+            <Route path="/welcome"  component={Welcome}/>
             <Route path="/autokey" component={AutoKey}/>
             <Route path="/autolockout" component={AutoLockout}/>
             <Route path="/autolockoutkey" component={AutoLockoutKey}/>
